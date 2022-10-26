@@ -4,26 +4,26 @@
             <div class="row g-3">
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">NAME</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="name" [(ngModel)]="name">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">MOBILE NUMBER</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="mobilenumber" [(ngModel)]="mobilenumber">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">EMAIL-ID</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="email" [(ngModel)]="email">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">PASSWORD</label>
-                    <input type="text" class="form-control">
+                    <input type="password" class="form-control" name="password" [(ngModel)]="password">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">CONFIRM PASSWORD</label>
-                    <input type="text" class="form-control">
+                    <input type="password" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <button class="btn btn-info">SIGN UP</button>
+                    <button class="btn btn-info" (click)="readValues()">SIGN UP</button>
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <a href="">GO TO LOGIN PAGE</a>

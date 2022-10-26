@@ -4,14 +4,14 @@
             <div class="row g-3">
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">EMAIL</label>
-                    <input type="email" class="form-control">
+                    <input type="email" class="form-control" name="email" [(ngModel)]="email">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">PASSWORD</label>
-                    <input type="password" class="form-control">
+                    <input type="password" class="form-control" name="password" [(ngModel)]="password">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <button class="btn btn-primary">LOGIN</button>
+                    <button class="btn btn-primary" (click)="readValues()">LOGIN</button>
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <a href="signup">NEW USERS CLICK HERE</a>
